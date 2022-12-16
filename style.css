@@ -1,0 +1,130 @@
+html {
+  font-size: clamp(1rem, 1vw, 2rem);
+  font-family: Lato, sans-serif;
+}
+
+body {
+  background-color: rgb(0, 0, 0, 0.6);
+  background-image: url('https://wallpaper.dog/large/17094072.jpg');
+  background-size: cover;
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  margin: auto;
+}
+
+h1 {
+  margin-block: -20px 0;
+  font: 3rem "Pokemon Solid", "sigmar one", sans-serif;
+  color: #ffcb05;
+  -webkit-text-stroke: 2.4px #365faa;
+  text-shadow: 0 0 10px #ffcb05, 0 0 20px #ffcb05, 0 0 30px #ffcb05, 0 0 40px #ffcb05;
+}
+
+h2 {
+  margin-block: 0;
+  font: 1.4rem "sigmar one", sans-serif;
+  text-align: center;
+  color: #ffcb05;
+  -webkit-text-stroke: 1.4px #365faa;
+}
+
+h3 {
+  margin-block: 0;
+}
+
+main {
+  width: 80vw;
+  height: 80vh;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgb(0, 0, 0, 0.6);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 3fr;
+}
+
+
+.main__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main__item--list {
+  grid-row: span 2;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+#pokemon-list__wrapper {
+  background-color: lightblue;
+}
+
+#pokemon-list {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pokemon-list__item {
+  width: 60%;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.pokemon-list__item:hover {
+  background-color: rgb(0, 0, 0, 0.2);
+}
+
+.pokemon-list__item:active {
+  background-color: rgb(0, 0, 0, 0.1);
+}
+
+#request-status__wrapper {
+  background-color: lightcoral;
+}
+
+#request-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#pokemon-preview__wrapper {
+  background-color: lightgreen;
+}
+
+#pokemon-preview {
+  visibility: hidden;
+  background-color: rgb(255, 255, 255, 0.6);
+  box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemon-preview__types {
+  margin: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.pokemon-preview__type {
+  padding: 6px;
+  border-radius: 10px;
+}
